@@ -1,4 +1,4 @@
-    <LastName>John</LastName>
-    <FirstName>Doe</FirstName>
-    <PatientUID>98001048609</PatientUID>
-    <DOB>1980-10-12T00:00:00</DOB>
+    { “last_name”:"John",
+     “first_name”:"Doe",
+     “external_id”:"98001048609",
+    “data_of_birth”:"1980-10-12"}

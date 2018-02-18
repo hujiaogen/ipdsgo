@@ -1,0 +1,1 @@
+grep -e \<FirstName\> -e \<LastName\> -e \<PatientUID\> -e \<DOB\> $1 |sed '$s@T[0-9]*:[0-9]*:[0-9]*</DOB>@</DOB>@'| sed 's/<LastName>/{ “last_name”:"/' | sed 's/<\/LastName>/",/' |sed 's/<FirstName>/ “first_name”:"/' | sed 's/<\/FirstName>/",/'|sed 's/<PatientUID>/ “external_id”:"/' | sed 's/<\/PatientUID>/",/'|sed 's/<DOB>/“data_of_birth”:"/' | sed 's/<\/DOB>/"}/'
